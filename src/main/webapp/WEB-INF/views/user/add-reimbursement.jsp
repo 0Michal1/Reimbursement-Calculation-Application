@@ -81,10 +81,10 @@
                             <input type="hidden" id="receiptsValue" name="receiptsValue" value="${reimbursement.receiptsValue}">
                             <div class="mb-3"><label for="days">Number of Days</label><input
                                     class="form-control" id="days" name="days" type="number"
-                                    placeholder="Number if Days"></div>
+                                    placeholder="Number of Days"></div>
                             <div class="mb-3"><label for="mileage">Number of Kilometers</label><input
                                     class="form-control" id="mileage" name="mileage" type="number"
-                                    placeholder="Number if Kilometers"></div>
+                                    placeholder="Number of Kilometers"></div>
                             <div class="mb-3">
                                 <button class="btn btn-primary" type="submit">Add</button>
                             </div>
