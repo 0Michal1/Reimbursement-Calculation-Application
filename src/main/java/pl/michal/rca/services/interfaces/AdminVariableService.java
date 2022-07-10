@@ -21,4 +21,7 @@ public interface AdminVariableService {
 
     AdminVariable create(AdminVariable receiptType);
     void updateState(int id, String state);
+
+
+    String readNameById(int typeId);
 }

@@ -73,9 +73,9 @@
                                     <tr>
                                         <td><a href="/admin/reimbursements/list">Reimbursement list</a></td>
                                     </tr>
-                                    <tr>
-                                        <td><a href="/admin/user/list">User List</a></td>
-                                    </tr>
+<%--                                    <tr>--%>
+<%--                                        <td><a href="/admin/user/list">User List</a></td>--%>
+<%--                                    </tr>--%>
                                     <tr>
                                         <td><a href="/admin/rates">Change rates and limits</a></td>
                                     </tr>

@@ -73,15 +73,13 @@
                             <div class="mb-3"><label for="username">Username</label><input
                                     class="form-control" id="username" name="username" type="text"
                                     placeholder="Username"></div>
-                            <div class="mb-3"><label for="password">Pasword</label><input
+                            <div class="mb-3"><label for="password">Password</label><input
                                     class="form-control" id="password" name="password" type="password"
                                     placeholder="User Password"></div>
                             <div class="mb-3">
                                 <button class="btn btn-primary" type="submit">Login</button>
                             </div>
                         </form>
-
-
                     </div>
                 </div>
 

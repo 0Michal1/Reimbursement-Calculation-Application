@@ -69,12 +69,12 @@
                                     <th>Id</th>
                                     <th>Username</th>
                                     <th>Receipts value</th>
-                                    <th>Receipts list</th>
+<%--                                    <th>Receipts list</th>--%>
                                     <th>Total days</th>
                                     <th>Total mileage</th>
                                     <th>Total Reimbursement</th>
                                     <th>Acceptance</th>
-                                    <th>Action</th>
+<%--                                    <th>Action</th>--%>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -84,17 +84,17 @@
                                         <td>${reimbursement.id}</td>
                                         <td>${reimbursement.username}</td>
                                         <td>${reimbursement.receiptsValue}</td>
-                                        <td>
-                                            <a href="/admin/reimbursement/receipts?id=${reimbursement.id}">Receipts List</a>
-                                        </td>
+<%--                                        <td>--%>
+<%--                                            <a href="/admin/reimbursement/receipts?id=${reimbursement.id}">Receipts List</a>--%>
+<%--                                        </td>--%>
                                         <td>${reimbursement.days}</td>
                                         <td>${reimbursement.mileage}</td>
                                         <td>${reimbursement.total}</td>
                                         <td>${reimbursement.acceptance}</td>
-                                        <td>
+<%--                                        <td>--%>
 
-                                            <a href="/user/reimbursement/edit?id=${reimbursement.id}">Edit</a>
-                                        </td>
+<%--                                            <a href="/user/reimbursement/edit?id=${reimbursement.id}">Edit</a>--%>
+<%--                                        </td>--%>
                                     </tr>
                                 </c:forEach>
                                 </tbody>

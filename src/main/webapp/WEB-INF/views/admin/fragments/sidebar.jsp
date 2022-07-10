@@ -20,10 +20,15 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Homepage</span></a>
     </li>
+<%--    <li class="nav-item active">--%>
+<%--        <a class="nav-link" href="/admin/user/list">--%>
+<%--            <i class="fas fa-fw fa-tachometer-alt"></i>--%>
+<%--            <span>User List</span></a>--%>
+<%--    </li>--%>
     <li class="nav-item active">
-        <a class="nav-link" href="/admin/user/list">
+        <a class="nav-link" href="/admin/reimbursements/list">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>User List</span></a>
+            <span>Reimbursements List</span></a>
     </li>
     <li class="nav-item active">
         <a class="nav-link" href="/admin/rates">

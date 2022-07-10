@@ -46,4 +46,11 @@ public class AdminVariableService implements pl.michal.rca.services.interfaces.A
     public void updateState(int id, String state) {
         adminVariableRepository.updateState(id, state);
     }
+
+    @Override
+    public String readNameById(int typeId) {
+        return adminVariableRepository.read(typeId).getName();
+    }
+
+
 }

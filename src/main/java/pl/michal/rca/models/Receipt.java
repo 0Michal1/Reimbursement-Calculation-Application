@@ -14,4 +14,5 @@ public class Receipt {
     private int typeId;
     private double value;
     private int reimbursementId;
+    private String name;
 }

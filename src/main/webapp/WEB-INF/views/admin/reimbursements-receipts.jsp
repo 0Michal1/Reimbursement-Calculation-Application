@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: michal
-  Date: 06.07.2022
-  Time: 11:07
+  Date: 10.07.2022
+  Time: 16:32
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page isELIgnored="false" %>
@@ -53,48 +53,32 @@
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Reimbursements</h1>
+                     <a href="/admin/reimbursements/list" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-user-plus fa-sm text-white-50"></i>Reimbursements List</a>
 
                 </div>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Reimbursements List</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Reimbursements Receipts List</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Username</th>
-                                    <th>Receipts value</th>
-                                    <th>Receipts list</th>
-                                    <th>Total days</th>
-                                    <th>Total mileage</th>
-                                    <th>Total Reimbursement</th>
-                                    <th>Acceptance</th>
-                                    <th>Action</th>
+                                    <th>Reimbursement Id</th>
+                                    <th>Name</th>
+                                    <th>Value</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach items="${reimbursements}" var="reimbursement">
+                                <c:forEach items="${receipts}" var="receipt">
                                     <tr>
-                                        <td>${reimbursement.id}</td>
-                                        <td>${reimbursement.username}</td>
-                                        <td>${reimbursement.receiptsValue}</td>
-                                        <td>
-                                            <a href="/admin/reimbursements/receipts?id=${reimbursement.id}">Receipts List</a>
-                                        </td>
-                                        <td>${reimbursement.days}</td>
-                                        <td>${reimbursement.mileage}</td>
-                                        <td>${reimbursement.total}</td>
-                                        <td>${reimbursement.acceptance}</td>
-                                        <td>
-                                            <a href="/admin/reimbursements/acceptance?id=${reimbursement.id}&acceptance=Accepted">Accept</a>
-<%--                                            <a href="/admin/reimbursement/edit?id=${reimbursement.id}">Edit</a>--%>
-                                            <a href="/admin/reimbursements/acceptance?id=${reimbursement.id}&acceptance=Declined">Decline</a>
-                                        </td>
+                                        <td>${receipt.reimbursementId}</td>
+                                        <td>${receipt.name}</td>
+                                        <td>${receipt.value}</td>
+
                                     </tr>
                                 </c:forEach>
                                 </tbody>
